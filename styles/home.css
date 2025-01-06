@@ -1,0 +1,87 @@
+#hero .content-wrapper {
+    height: 100%;
+    background:linear-gradient(0deg, rgba(02, 48, 71, 1) 10%, rgba(02, 48, 71, .8));
+    background-position: center;
+    background-size: cover;
+    padding: 7rem 0;
+}
+
+#tm {
+    font-size: 1rem;
+    vertical-align: bottom;
+}
+
+#hero-video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-tagline {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.hero-tagline h1 {
+    font-size: clamp(5.25rem, 12.4vw, 7rem);
+    margin: 0 0 1rem 0;
+    overflow-wrap: break-word;
+    line-height: 6rem;
+    text-align: end;
+}
+
+.hero-tagline p {
+    color: white;
+    font-size: 1.66rem;
+    font-weight: 200;
+    margin: 0;
+    text-align: end;
+    width: 100%;
+    max-width: 653px;
+    margin-left: auto;
+
+}
+
+
+#hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+#hero-wrapper .text-wrapper {
+    width: 100%;
+    max-width: 1012px;
+    margin-top: 5rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+
+.usp-wrapper {
+    color: white;
+    width: 100%;
+    max-width: 1012px;
+    margin-top: 2.95rem;
+    margin-left: auto;
+    margin-right: 18%;
+    padding: 0 1rem;
+    text-align: end;
+    box-sizing: border-box;
+}
+
+.usp-wrapper h1 {
+    font-size: 2.95rem;
+    margin: 0;
+    margin-bottom: auto;
+}
+
+.usp-wrapper .cta-button {
+    font-size: 1.66rem;
+    font-weight: 200;
+    margin-left: auto;
+    margin-top: 1rem;
+}

@@ -1,0 +1,92 @@
+section#contact {
+    background-color: #023047;
+    padding: 2rem 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+section#contact a {
+    text-decoration: none;
+    color: #FFB703;
+    display:flex;
+    margin-bottom: 1.21rem;
+}
+
+section#contact .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin: 3.95rem auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 1.24rem;
+}
+
+section#contact .contact-wrapper h1 {
+    width: 100%;
+    max-width: 1350px;
+    font-size: 3.95rem;
+}
+
+section#contact .contact-wrapper .business-card {
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.business-card p {
+    margin: 0;
+    font-size: 1.24rem; 
+}
+
+.business-card .text-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2.95rem;
+
+}
+
+.business-card .icon {
+    padding-right: .93rem;
+}
+
+.business-card .text-wrapper p {
+    display: block;
+}
+
+.business-card h2 {
+    font-size: 2.95rem;
+}
+
+.contact-form {
+    width: 100%;
+
+}
+
+.contact-form p {
+    margin: 0;
+}
+
+.contact-form form label {
+    width: 100%;
+
+}
+
+.contact-form form input {
+    line-height: 2.21rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 900px;
+
+}
+
+.contact-form form textarea {
+
+    width: 100%;
+    max-width: 900px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #FB8500;
+}

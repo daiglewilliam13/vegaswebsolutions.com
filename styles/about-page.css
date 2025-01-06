@@ -1,0 +1,48 @@
+#about-main {
+    background:
+        linear-gradient(0deg, rgba(02, 48, 71, 1) 10%, rgba(02, 48, 71, .80)),
+        url('/images/Vegas_Featured.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+ .about-content-wrapper {
+    padding: 7rem 1.66rem;
+    width: 100%;
+    max-width: 1554px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.about-content-wrapper h1 {
+    font-size: 3.93rem;
+}
+.about-content-wrapper p {
+    font-size: 1.66rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 3px black;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.66rem 0;
+    box-sizing: border-box;
+}
+
+.about-content-wrapper img {
+    margin: 1.66rem;
+}
+
+.about-content-wrapper p::first-letter {
+    font-size: 2.95rem;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.text-wrapper p {
+    width: 100%;
+    max-width: 777px;
+}

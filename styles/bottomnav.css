@@ -1,0 +1,41 @@
+#bottom-nav {
+    background: linear-gradient(to right, rgba(142, 202, 230, 1), rgba(33, 158, 188, 1));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top: 10px solid black;
+
+}
+
+#bottom-nav img {
+    margin: 1.25rem auto;
+    filter: drop-shadow(2px 4px 7px #023047);
+}
+
+#bottom-nav .link-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: .5rem 2rem;
+    box-sizing: border-box;
+
+}
+
+#bottom-nav p {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.botnavlink {
+    text-decoration: none;
+    color: black;
+    transition: 200ms;
+}
+
+
+.botnavlink:hover {
+    color: #ffb703;
+    filter: drop-shadow(2px 4px 7px #023047);
+}

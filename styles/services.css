@@ -1,0 +1,66 @@
+#services-main {
+    background:
+        linear-gradient(0deg, rgba(02, 48, 71, 1) 10%, rgba(02, 48, 71, .80)),
+        url('/images/summerlin.png');
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+ .services-content-wrapper {
+    padding: 7rem 0;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.services-content-wrapper h1 {
+    font-size: 3.93rem;
+    margin: 7rem auto;
+    max-width: 1554px;
+    padding: 0 1.24rem;
+
+}
+
+.product-bar {
+    margin-bottom: 5.25rem;
+    background-color: #023047;
+    padding: 5.25rem 1.24rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 15rem;
+
+
+}
+
+.product-bar h2{
+    font-size: 2.21rem;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 1554px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.product-bar p {
+    font-size: 1.24rem;
+    font-weight: 200;
+    margin: 0 auto;
+    max-width: 1554px;
+    position: relative;
+    z-index: 1;
+}
+
+.product-bar p::first-letter {
+    font-size: 1.66rem;
+}
+
+.product-bar .icon {
+    height: 20rem;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    filter: brightness(50%);
+}

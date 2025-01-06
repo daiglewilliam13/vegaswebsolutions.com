@@ -1,0 +1,52 @@
+.content-wrapper {
+    margin: 3rem auto;
+    max-width: 1500px;
+    display: flex;
+    padding: 1rem;
+}
+
+.title {
+    text-align: center;
+}
+
+#project-details {
+    display: none;
+}
+
+.project-wrapper {
+    display: flex;
+}
+
+#project-list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+.project-list img {
+    width: 100%;
+    max-width: 20rem;
+}
+
+.details-image {}
+
+@media screen and (min-width:800px) {
+    #project-details {
+        display: block;
+    }
+
+    .summary-tech {
+        display: none;
+    }
+
+    .project-link {
+        display: none
+    }
+}

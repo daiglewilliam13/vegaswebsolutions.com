@@ -1,0 +1,150 @@
+#graph-tsot,
+#graph-pct {
+    width: 100%;
+    height: 500px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+#graph-tsot .markers,
+#graph-pct .markers {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: .5;
+}
+
+#ts-bubble, #line-tooltip {
+    position: absolute;
+    z-index: 999;
+    transition: 600ms ease-out;
+    bottom: 0;
+    opacity: 0;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    animation-name: bobbing;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bobbing {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(-15px);
+    } 100% {
+        transform: translateY(0);
+    }
+}
+#graph-tsot .markers div,
+#graph-pct .markers div {
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    padding-left: 1rem;
+    padding-top: 3px;
+}
+
+.graph-wrapper {
+    position: relative;
+}
+
+.graph-wrapper h2 {
+    margin: 0;
+}
+
+#graph-tsot .bar-wrapper,
+#graph-pct .line-wrapper {
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.bar-wrapper .bar {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to right, #FB8500, #FFB703);
+    box-shadow: 0px 0px 20px -5px black;
+    border-bottom: none;
+    margin: 0 3px;
+    opacity: 1;
+    transition: 1s ease-in-out;
+    position: relative;
+
+}
+
+.line-wrapper .line {
+    width: 100%;
+    margin: 0;
+    border-top: 5px solid #FFB703;
+    transition: transform 0;
+    filter: drop-shadow(5px 5px 10px black);
+    transform-origin: left;
+    position: relative;
+}
+
+.line:hover {
+    border-top: 5px solid #8ECAE6;
+    background: rgb(142, 202, 230);
+    background: linear-gradient(180deg, rgba(142, 202, 230, 1) 0%, rgba(33, 158, 188, 1) 20%, rgba(33, 158, 188, 0) 80%);
+    transition: 700ms;
+}
+
+.bar-wrapper .bar:hover {
+    opacity: .5;
+    transition: 500ms
+}
+
+.bar-wrapper .bar::after {
+    content: attr(data-year);
+    position: absolute;
+    font-size: clamp(10px, 1vw, 1rem);
+    bottom: -1.5rem;
+}
+
+
+/* percent of total sales graph */
+
+#usp-2 .graph-wrapper {
+    width: 100%;
+    max-width: 1350px;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+#line-tooltip {
+    position: absolute;
+}
+
+#line-dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #8ECAE6;
+    position: absolute;
+    z-index: 999;
+    bottom: 100px;
+    left: 0;
+}
+
+#year-disp {
+    position: relative;
+    left: 0;
+}
+
+#year-disp::before {
+    content: 'Year '
+}

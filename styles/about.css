@@ -1,0 +1,123 @@
+section#about {
+    background-color: #023047;
+}
+
+
+#usp-1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7rem 1rem;
+    max-width: 1800px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#usp-1 .text-wrapper {
+    width: 100%;
+    max-width: 788px;
+    margin-top: 2.95rem;
+
+}
+
+#usp-1 h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.94rem;
+}
+
+#usp-2 h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.94rem;
+    margin-top: 2.95rem;
+}
+
+.text-wrapper h2 {
+    margin: 0;
+    font-size: 2.21rem;
+    font-weight: normal;
+}
+
+.text-wrapper p {
+    margin: 0;
+    margin-bottom: 2.95rem;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+#usp-2 {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2.21rem;
+}
+
+#about .bg-wrapper {
+    background:
+        linear-gradient(180deg, rgba(02, 48, 71, 1) 5%, rgba(02, 48, 71, .2)),
+        linear-gradient(0deg, rgba(02, 48, 71, 1) 5%, rgba(02, 48, 71, .2)),
+        url('/images/DowntownLasVegas.jpg');
+    background-size: cover;
+}
+
+#usp-1 .graph-wrapper {
+    width: 100%;
+    max-width: 591px;
+    margin-top: 2.95rem;
+}
+
+#usp-2 .text-wrapper {
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: space-around;
+
+}
+
+#usp-2 .text-wrapper .text {
+    width: 100%;
+    max-width: 506px;
+}
+
+#usp-2 .button-wrapper {
+    margin: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#usp-2 .button-wrapper a {
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+div#projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1800px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+div#projects .text-wrapper {
+    padding: 1rem;
+    width: 100%;
+    max-width: 506px;
+    box-sizing: border-box;
+}
+
+div#projects .project-list {
+    width: 100%;
+    max-width: 759px;
+}
+
+.project-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
