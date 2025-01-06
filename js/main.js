@@ -1,9 +1,36 @@
 console.log('connected main.js')
+
+//navbar 
+
+const htmlToInject = `
+<img src="/images/sunburst.png" height="75px" width="100px"> 
+<a class="navlink" id="home" href="/index.html">home</a>
+<a class="navlink" id="about" href="/about/index.html">about</a>
+<a class="navlink" id="services" href="/services/index.html">services</a>
+<a class="navlink" id="contact" href="/contact/index.html">contact</a>
+<span id="vws">Vegas Web Solutions™</span>
+`
+
+let navEl = document.getElementById('navbar');
+
+//set active class 
+
+navEl.innerHTML = htmlToInject;
+let currentPage = document.querySelector('meta[name=page').getAttribute('content');
+let navBarItems = Array.from(document.getElementsByClassName('navlink'));
+navBarItems.forEach((item)=>{
+    if(item.id==currentPage){
+        item.classList.add('selected');
+    } else {
+        item.classList.remove('selected');
+    }
+})
+
 // graphs
 
 // total sales graph
 const graphTS = document.getElementById('graph-tsot');
-let bars1 = Array.from(graphTS.children[1].children)
+let bars1 = Array.from(graphTS?.children[1].children)
 let tooltip1 = document.getElementById('ts-bubble');
 let interval = 0;
 bars1.forEach((bar) => {
@@ -149,6 +176,7 @@ window.addEventListener('resize', function () {
     moveDot(13, bars2[0].offsetHeight)
 
 })
+
 
 
 

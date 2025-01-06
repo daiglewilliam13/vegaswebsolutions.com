@@ -2,7 +2,6 @@
 
 let divsToAnimate = Array.from(document.querySelectorAll('[data-animate]'));
 
-console.log(divsToAnimate)
 window.addEventListener('scroll', (e) =>{
     animateFadeIn();
 })
